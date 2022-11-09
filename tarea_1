@@ -1,1 +1,20 @@
+program tarea_1;
+{$codepage utf8}
+var
+    numero:integer; resultado:real;
+
+function factorial(n:integer):real;
+    
+    begin
+    if (n=0) then
+        factorial:=1
+    else
+        factorial:=n*factorial(n-1);
+    end;
+
+begin
+    write('Ingrese un número: ');readln(numero);
+    resultado:=factorial(numero);
+    write(' ',numero,'! = ',resultado);
+end.
 
